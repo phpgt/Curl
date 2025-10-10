@@ -63,3 +63,9 @@ echo PHP_EOL;
 echo "The fact's length is {$json->length} characters.";
 echo PHP_EOL;
 ```
+
+### Proudly sponsored by
+
+[JetBrains Open Source sponsorship program](https://www.jetbrains.com/community/opensource/)
+
+[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://www.jetbrains.com/community/opensource/)
