@@ -24,9 +24,7 @@ class Curl implements CurlInterface {
 	 * @see http://php.net/manual/en/function.curl-close.php
 	 */
 	public function __destruct() {
-		if(isset($this->ch)) {
-			curl_close($this->ch);
-		}
+		curl_close($this->ch);
 	}
 
 	/**
