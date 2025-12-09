@@ -9,7 +9,7 @@ use CurlHandle;
  * matching methods for all internal functions.
  */
 interface CurlInterface {
-	public function __construct(string $url = null);
+	public function __construct(?string $url = null);
 
 	/**
 	 * Close a cURL session
@@ -70,7 +70,7 @@ interface CurlInterface {
 	 * Initialize a cURL session
 	 * @see http://php.net/manual/en/function.curl-init.php
 	 */
-	public function init(string $url = null):void;
+	public function init(?string $url = null):void;
 
 	/**
 	 * Pause and unpause the connection
