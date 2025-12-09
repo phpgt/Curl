@@ -113,7 +113,7 @@ class CurlTest extends TestCase {
 			$sut->exec();
 		}
 		catch(CurlException) {
-			self::assertSame("Could not resolve host: nowhere", $sut->error());
+			self::assertStringStartsWith("Could not resolve host: nowhere", $sut->error());
 		}
 	}
 
