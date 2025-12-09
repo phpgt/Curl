@@ -4,14 +4,14 @@
 	"type": "library",
 
 	"require": {
-		"php": ">=8.1",
+		"php": ">=8.4",
 		"ext-curl": "*",
 		"ext-json": "*",
-		"phpgt/json": "^1.2"
+		"phpgt/json": "^2.2"
 	},
 
 	"require-dev": {
-		"phpstan/phpstan": "^1.9",
+		"phpstan/phpstan": "^2.1",
 		"phpunit/phpunit": "^10.0",
 		"phpmd/phpmd": "^2.13",
 		"squizlabs/php_codesniffer": "^3.7"

@@ -14,7 +14,7 @@ class Curl implements CurlInterface {
 	/** @var callable */
 	protected $writeFunction;
 
-	public function __construct(string $url = null) {
+	public function __construct(?string $url = null) {
 		$this->buffer = null;
 		$this->init($url);
 	}
@@ -24,9 +24,7 @@ class Curl implements CurlInterface {
 	 * @see http://php.net/manual/en/function.curl-close.php
 	 */
 	public function __destruct() {
-		if(isset($this->ch)) {
-			curl_close($this->ch);
-		}
+		curl_close($this->ch);
 	}
 
 	/**
@@ -147,7 +145,7 @@ class Curl implements CurlInterface {
 	 * Initialize a cURL session
 	 * @see http://php.net/manual/en/function.curl-init.php
 	 */
-	public function init(string $url = null):void {
+	public function init(?string $url = null):void {
 		$this->ch = curl_init($url);
 		CurlObjectLookup::add($this);
 	}

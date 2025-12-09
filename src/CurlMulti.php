@@ -103,7 +103,7 @@ class CurlMulti implements CurlMultiInterface {
 	 * @see http://php.net/manual/en/function.curl-multi-info-read.php
 	 * @throws CurlException on failure
 	 */
-	public function infoRead(int &$msgsInQueue = null):?CurlMultiInfoInterface {
+	public function infoRead(?int &$msgsInQueue = null):?CurlMultiInfoInterface {
 		$info = curl_multi_info_read(
 			$this->mh,
 			$msgsInQueue
