@@ -84,11 +84,11 @@ class CurlTest extends TestCase {
 			Curl::strError(CURLE_URL_MALFORMAT)
 		);
 		self::assertSame(
-			"Couldn't resolve proxy name",
+			"Could not resolve proxy name",
 			Curl::strError(CURLE_COULDNT_RESOLVE_PROXY)
 		);
 		self::assertSame(
-			"Couldn't resolve host name",
+			"Could not resolve hostname",
 			Curl::strError(CURLE_COULDNT_RESOLVE_HOST)
 		);
 	}
