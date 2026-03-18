@@ -1,7 +1,7 @@
 <?php
-namespace Gt\Curl\Test;
+namespace GT\Curl\Test;
 
-use Gt\Curl\CurlMultiInfo;
+use GT\Curl\CurlMultiInfo;
 use PHPUnit\Framework\TestCase;
 
 class CurlMultiInfoTest extends TestCase {

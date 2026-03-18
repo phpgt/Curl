@@ -1,10 +1,10 @@
 <?php
-namespace Gt\Curl;
+namespace GT\Curl;
 
 use CurlShareHandle;
 
 class CurlShare implements CurlShareInterface {
-	protected CurlShareHandle $sh;
+	protected ?CurlShareHandle $sh;
 
 	public function __construct() {
 		$this->init();
@@ -27,7 +27,7 @@ class CurlShare implements CurlShareInterface {
 	 * @see http://php.net/manual/en/function.curl-share-close.php
 	 */
 	public function close():void {
-		curl_share_close($this->sh);
+		$this->sh = null;
 	}
 
 	/**

@@ -1,8 +1,8 @@
 <?php
-namespace Gt\Curl\Test;
+namespace GT\Curl\Test;
 
 use Exception;
-use Gt\Curl\CurlShare;
+use GT\Curl\CurlShare;
 use PHPUnit\Framework\TestCase;
 
 class CurlShareTest extends TestCase {

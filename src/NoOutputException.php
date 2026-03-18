@@ -1,4 +1,4 @@
 <?php
-namespace Gt\Curl;
+namespace GT\Curl;
 
 class NoOutputException extends CurlException {}

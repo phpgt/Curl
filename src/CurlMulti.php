@@ -1,5 +1,5 @@
 <?php
-namespace Gt\Curl;
+namespace GT\Curl;
 
 use CurlHandle;
 use CurlMultiHandle;
@@ -57,9 +57,7 @@ class CurlMulti implements CurlMultiInterface {
 	 * @see http://php.net/manual/en/function.curl-multi-close.php
 	 */
 	public function close():void {
-		if(isset($this->mh)) {
-			curl_multi_close($this->mh);
-		}
+		curl_multi_close($this->mh);
 	}
 
 	/**
