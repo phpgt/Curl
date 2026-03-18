@@ -11,11 +11,11 @@ class CurlObjectLookupTest extends TestCase {
 		$curlHandle2 = curl_init();
 		$curlHandle3 = curl_init();
 
-		$curlInterface1 = self::createMock(CurlInterface::class);
+		$curlInterface1 = self::createStub(CurlInterface::class);
 		$curlInterface1->method("getHandle")->willReturn($curlHandle1);
-		$curlInterface2 = self::createMock(CurlInterface::class);
+		$curlInterface2 = self::createStub(CurlInterface::class);
 		$curlInterface2->method("getHandle")->willReturn($curlHandle2);
-		$curlInterface3 = self::createMock(CurlInterface::class);
+		$curlInterface3 = self::createStub(CurlInterface::class);
 		$curlInterface3->method("getHandle")->willReturn($curlHandle3);
 		CurlObjectLookup::add($curlInterface1);
 		CurlObjectLookup::add($curlInterface2);

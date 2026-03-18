@@ -75,7 +75,7 @@ class CurlMultiTest extends TestCase {
 	}
 
 	public function testGetContent():void {
-		$expectedMessage = "Hello, PHP.Gt!";
+		$expectedMessage = "Hello, PHP.GT!";
 // Start a basic HTTP server that responds with a known response.
 		$tmpFile = tempnam(sys_get_temp_dir(), "phpgt-curl-test-");
 		file_put_contents($tmpFile, $expectedMessage);
@@ -121,7 +121,7 @@ class CurlMultiTest extends TestCase {
 	}
 
 	public function testInfoRead():void {
-		$expectedMessage = "Hello, PHP.Gt!";
+		$expectedMessage = "Hello, PHP.GT!";
 // Start a basic HTTP server that responds with a known response.
 		$tmpFile = tempnam(sys_get_temp_dir(), "phpgt-curl-test-");
 		file_put_contents($tmpFile, $expectedMessage);
@@ -159,7 +159,7 @@ class CurlMultiTest extends TestCase {
 	}
 
 	public function testRemove():void {
-		$expectedMessage = "Hello, PHP.Gt!";
+		$expectedMessage = "Hello, PHP.GT!";
 // Start a basic HTTP server that responds with a known response.
 		$tmpFile = tempnam(sys_get_temp_dir(), "phpgt-curl-test-");
 		file_put_contents($tmpFile, $expectedMessage);
@@ -198,7 +198,7 @@ class CurlMultiTest extends TestCase {
 	}
 
 	public function testSelect():void {
-		$expectedMessage = "Hello, PHP.Gt!";
+		$expectedMessage = "Hello, PHP.GT!";
 // Start a basic HTTP server that responds with a known response.
 		$tmpFile = tempnam(sys_get_temp_dir(), "phpgt-curl-test-");
 		file_put_contents($tmpFile, $expectedMessage);

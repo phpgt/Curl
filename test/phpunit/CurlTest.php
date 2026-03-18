@@ -196,7 +196,7 @@ class CurlTest extends TestCase {
 	}
 
 	public function testOutput():void {
-		$expectedMessage = "Hello, PHP.Gt!";
+		$expectedMessage = "Hello, PHP.GT!";
 // Start a basic HTTP server that responds with a known response.
 		$tmpFile = tempnam(sys_get_temp_dir(), "phpgt-curl-test-");
 		file_put_contents($tmpFile, $expectedMessage);
@@ -256,7 +256,7 @@ class CurlTest extends TestCase {
 
 	public function testOutputJson():void {
 		$expectedObj = (object)[
-			"message" => "Hello, PHP.Gt!",
+			"message" => "Hello, PHP.GT!",
 		];
 		$expectedMessage = json_encode($expectedObj);
 // Start a basic HTTP server that responds with a known response.
@@ -283,7 +283,7 @@ class CurlTest extends TestCase {
 		}
 		$sut = new Curl("http://localhost:$port");
 		$sut->exec();
-		self::assertSame("Hello, PHP.Gt!", $sut->outputJson()->getString("message"));
+		self::assertSame("Hello, PHP.GT!", $sut->outputJson()->getString("message"));
 	}
 
 	public function testGetHeaderFunction():void {

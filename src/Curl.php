@@ -7,7 +7,7 @@ use Gt\Json\JsonObject;
 use Gt\Json\JsonObjectBuilder;
 
 class Curl implements CurlInterface {
-	protected CurlHandle $ch;
+	protected ?CurlHandle $ch;
 	protected ?string $buffer;
 	/** @var callable */
 	protected $headerFunction;
@@ -24,9 +24,11 @@ class Curl implements CurlInterface {
 	 * @see http://php.net/manual/en/function.curl-close.php
 	 */
 	public function __destruct() {
-		if(isset($this->ch)) {
-			curl_close($this->ch);
-		}
+		$this->close();
+	}
+
+	public function close():void {
+		$this->ch = null;
 	}
 
 	/**
@@ -62,7 +64,7 @@ class Curl implements CurlInterface {
 			$this->exec();
 		}
 
-		curl_close($this->ch);
+		$this->close();
 
 // ...But will always be a string after exec is called, even if empty.
 		if(strlen($this->buffer) === 0) {
