@@ -2,3 +2,5 @@
 /vendor
 /*.phar
 /test/unit/_coverage
+# Local wiki symlink
+docs
