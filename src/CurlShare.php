@@ -1,5 +1,5 @@
 <?php
-namespace Gt\Curl;
+namespace GT\Curl;
 
 use CurlShareHandle;
 

@@ -41,12 +41,13 @@
 
 	"autoload": {
 		"psr-4": {
+			"GT\\Curl\\": "./src",
 			"Gt\\Curl\\": "./src"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Gt\\Curl\\Test\\": "./test/phpunit"
+			"GT\\Curl\\Test\\": "./test/phpunit"
 		}
 	},
 

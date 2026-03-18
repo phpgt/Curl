@@ -1,7 +1,7 @@
 <?php
-namespace Gt\Curl\Test;
+namespace GT\Curl\Test;
 
-use Gt\Curl\CurlVersion;
+use GT\Curl\CurlVersion;
 use PHPUnit\Framework\TestCase;
 
 class CurlVersionTest extends TestCase {

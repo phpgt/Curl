@@ -1,5 +1,5 @@
 <?php
-namespace Gt\Curl;
+namespace GT\Curl;
 
 /**
  * @property-read int $versionNumber cURL 24 bit version number

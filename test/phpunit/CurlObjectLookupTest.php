@@ -1,8 +1,8 @@
 <?php
-namespace Gt\Curl\Test;
+namespace GT\Curl\Test;
 
-use Gt\Curl\CurlInterface;
-use Gt\Curl\CurlObjectLookup;
+use GT\Curl\CurlInterface;
+use GT\Curl\CurlObjectLookup;
 use PHPUnit\Framework\TestCase;
 
 class CurlObjectLookupTest extends TestCase {

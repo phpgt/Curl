@@ -1,11 +1,11 @@
 <?php
-namespace Gt\Curl\Test;
+namespace GT\Curl\Test;
 
 use CurlMultiHandle;
 use Exception;
-use Gt\Curl\Curl;
-use Gt\Curl\CurlInterface;
-use Gt\Curl\CurlMulti;
+use GT\Curl\Curl;
+use GT\Curl\CurlInterface;
+use GT\Curl\CurlMulti;
 use PHPUnit\Framework\TestCase;
 
 class CurlMultiTest extends TestCase {

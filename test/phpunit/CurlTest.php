@@ -1,10 +1,10 @@
 <?php
-namespace Gt\Curl\Test;
+namespace GT\Curl\Test;
 
-use Gt\Curl\Curl;
-use Gt\Curl\CurlException;
-use Gt\Curl\CurlInterface;
-use Gt\Curl\NoOutputException;
+use GT\Curl\Curl;
+use GT\Curl\CurlException;
+use GT\Curl\CurlInterface;
+use GT\Curl\NoOutputException;
 use PHPUnit\Framework\TestCase;
 
 class CurlTest extends TestCase {
