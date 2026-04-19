@@ -5,8 +5,8 @@
  * the total time waiting for N responses is equal to the slowest response,
  * rather than the sum of all responses.
  */
-use Gt\Curl\Curl;
-use Gt\Curl\CurlMulti;
+use GT\Curl\Curl;
+use GT\Curl\CurlMulti;
 
 require(__DIR__ . "/../vendor/autoload.php");
 

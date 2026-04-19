@@ -3,7 +3,7 @@
  * This example shows how to load a JSON API and interact with the response in a
  * type-safe way. This utilises https://php.gt/json for the response object.
  */
-use Gt\Curl\Curl;
+use GT\Curl\Curl;
 
 require(__DIR__ . "/../vendor/autoload.php");
 

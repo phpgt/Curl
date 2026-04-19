@@ -2,7 +2,7 @@
 /*
  * This is the simplest example of how to perform an HTTP GET request using Curl
  */
-use Gt\Curl\Curl;
+use GT\Curl\Curl;
 
 require(__DIR__ . "/../vendor/autoload.php");
 
