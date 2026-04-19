@@ -3,8 +3,8 @@
  * This example downloads a picture of a cat, then uploads it to an example API
  * using an HTTP POST upload.
 */
-use Gt\Curl\Curl;
-use Gt\Curl\UploadFile;
+use GT\Curl\Curl;
+use GT\Curl\UploadFile;
 
 require(__DIR__ . "/../vendor/autoload.php");
 

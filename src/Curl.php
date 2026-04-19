@@ -2,9 +2,9 @@
 namespace GT\Curl;
 
 use CurlHandle;
-use Gt\Json\JsonDecodeException;
-use Gt\Json\JsonObject;
-use Gt\Json\JsonObjectBuilder;
+use GT\Json\JsonDecodeException;
+use GT\Json\JsonObject;
+use GT\Json\JsonObjectBuilder;
 
 class Curl implements CurlInterface {
 	protected ?CurlHandle $ch;

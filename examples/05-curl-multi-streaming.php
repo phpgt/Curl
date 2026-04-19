@@ -11,8 +11,8 @@
  * streamed during the execution (within the while loop).
  */
 
-use Gt\Curl\Curl;
-use Gt\Curl\CurlMulti;
+use GT\Curl\Curl;
+use GT\Curl\CurlMulti;
 
 require(__DIR__ . "/../vendor/autoload.php");
 
