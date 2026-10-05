@@ -2,9 +2,9 @@
 namespace GT\Curl;
 
 use CurlHandle;
-use Gt\Json\JsonDecodeException;
-use Gt\Json\JsonObject;
-use Gt\Json\JsonObjectBuilder;
+use GT\Json\JSONDecodeException;
+use GT\Json\JSONObject;
+use GT\Json\JSONObjectBuilder;
 
 class Curl implements CurlInterface {
 	protected ?CurlHandle $ch;
@@ -76,13 +76,13 @@ class Curl implements CurlInterface {
 
 	/**
 	 * Return json-decoded output from last exec call
-	 * @throws JsonDecodeException
+	 * @throws JSONDecodeException
 	 */
 	public function outputJson(
 		int $depth = 512,
 		int $options = 0
-	):JsonObject {
-		$builder = new JsonObjectBuilder($depth, $options);
+	):JSONObject {
+		$builder = new JSONObjectBuilder($depth, $options);
 		return $builder->fromJsonString($this->output());
 	}
 
